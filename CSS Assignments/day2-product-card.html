@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      /* ===================== Card Container ===================== */
+      .product-card {
+        max-width: 320px;             
+        margin: 0 auto;                
+
+        background-color: white;
+        padding: 20px;                
+        border: 1px solid #e0e0e0;     
+        border-radius: 12px;          
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      /* ===================== Product Image ===================== */
+      .product-image {
+        width: 100%;
+        height: 220px;
+        background-color: #dde2e8;
+        border-radius: 8px;
+
+        display: flex;                
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 16px;           
+      }
+
+      .product-image svg {
+        width: 48px;
+        height: 48px;
+        fill: #9aa5b1;
+      }
+
+      /* ===================== Typography ===================== */
+      .product-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 6px 0;
+      }
+
+      .product-description {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a7a7a;
+        margin: 0 0 12px 0;
+      }
+
+      .product-price {
+        font-size: 22px;
+        font-weight: 700;
+        color: #6c3ce9;
+        margin: 0 0 16px 0;
+      }
+
+      /* ===================== Button ===================== */
+      .add-to-cart {
+        display: block;                
+        width: 100%;
+        background-color: #6c3ce9;   
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        padding: 12px;                 
+        border-radius: 8px;          
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .add-to-cart:hover {
+        background-color: #5629c9;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="product-card">
+      <div class="product-image">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+        </svg>
+      </div>
+
+      <h2 class="product-name">Product Name</h2>
+      <p class="product-description">Short product description here.</p>
+      <p class="product-price">$49.99</p>
+
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registration page for Tech Conference 2025 - schedule, speakers, and sign up form.">
+  <meta name="author" content="Hamza Shahid">
+  <title>Tech Conference 2025</title>
+</head>
+<body>
+
+  <!-- Page header with event title -->
+  <header>
+    <h1>📅 Tech Conference 2025</h1>
+  </header>
+
+  <!-- Event banner image -->
+  <div class="banner">
+    <img src="banner.jpg" alt="Event banner" width="100%">
+  </div>
+
+  <hr>
+
+  <!-- Event schedule table -->
+  <section id="schedule">
+    <h2>🗓️ Event Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Day 1</td>
+          <td>10:00 AM</td>
+          <td>Opening Keynote</td>
+        </tr>
+        <tr>
+          <td>Day 1</td>
+          <td>2:00 PM</td>
+          <td>Workshop Session</td>
+        </tr>
+        <tr>
+          <td>Day 2</td>
+          <td>11:00 AM</td>
+          <td>Panel Discussion</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Featured speaker and venue images -->
+  <div class="info-row">
+    <div class="speaker">
+      <h3>🎤 Featured Speaker</h3>
+      <img src="speaker.jpg" alt="Speaker name">
+    </div>
+    <div class="venue">
+      <h3>📍 Venue</h3>
+      <img src="venue.jpg" alt="Venue name">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Registration form -->
+  <section id="registration">
+    <h2>📝 Registration Form</h2>
+    <form action="/register.php">
+
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+
+      <div class="form-group">
+        <span>Gender</span><br>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" checked> Male
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female"> Female
+        </label>
+        <label for="other">
+          <input type="radio" id="other" name="gender" value="other"> Other
+        </label>
+      </div>
+
+      <div class="form-group">
+        <span>Sessions (select all that apply)</span><br>
+        <label for="keynote">
+          <input type="checkbox" id="keynote" name="sessions" value="keynote" checked> Opening Keynote
+        </label>
+        <label for="workshop">
+          <input type="checkbox" id="workshop" name="sessions" value="workshop" checked> Workshop
+        </label>
+        <label for="panel">
+          <input type="checkbox" id="panel" name="sessions" value="panel"> Panel Discussion
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Select your country</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="india">India</option>
+          <option value="uae">UAE</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" name="requests" placeholder="Any special accommodations?"></textarea>
+      </div>
+
+      <button type="submit">✅ Register Now</button>
+
+    </form>
+  </section>
+
+  <hr>
+
+  <footer>
+    <p><small>&copy; 2025 Tech Conference. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>

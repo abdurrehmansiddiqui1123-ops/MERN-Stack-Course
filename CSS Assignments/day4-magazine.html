@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Layout</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f6f8;
+        color: #2d2d2d;
+      }
+
+      header {
+        background-color: #2d2d2d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      /* ===================== Grid Container ===================== */
+      .magazine-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      /* ===================== Simple card style for every box ===================== */
+      .box {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      .box h2, .box h3 {
+        margin-top: 0;
+        color: #4a6fa5;
+      }
+
+      .box p {
+        color: #555;
+        line-height: 1.6;
+      }
+
+      /* ===================== Featured Article: spans 2 columns ===================== */
+      .featured {
+        grid-column: span 2;
+        background-color: #4a6fa5;
+        color: white;
+      }
+
+      .featured h2 {
+        color: white;
+        font-size: 24px;
+      }
+
+      .featured p {
+        color: #eee;
+      }
+
+      /* ===================== Sidebar: column on the right ===================== */
+      .sidebar {
+        background-color: #fff8e1;
+      }
+
+      .sidebar li {
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      /* ===================== Responsive: stack to single column ===================== */
+      @media (max-width: 600px) {
+        .magazine-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .featured {
+          grid-column: 1;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>My Magazine</h1>
+    </header>
+
+    <div class="magazine-grid">
+
+      <!-- Featured Article (spans 2 columns) -->
+      <div class="box featured">
+        <h2>Featured Article: Learning CSS Grid</h2>
+        <p>
+          CSS Grid makes it easy to build magazine-style layouts with rows
+          and columns, without needing complicated tricks.
+        </p>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="box sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+          <li>Recent Post 1</li>
+          <li>Recent Post 2</li>
+          <li>Recent Post 3</li>
+        </ul>
+      </div>
+
+      <!-- Regular Articles -->
+      <div class="box">
+        <h3>Article One</h3>
+        <p>A short description about this article goes here.</p>
+      </div>
+
+      <div class="box">
+        <h3>Article Two</h3>
+        <p>A short description about this article goes here.</p>
+      </div>
+
+      <div class="box">
+        <h3>Article Three</h3>
+        <p>A short description about this article goes here.</p>
+      </div>
+
+      <div class="box">
+        <h3>Article Four</h3>
+        <p>A short description about this article goes here.</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

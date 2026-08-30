@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        color: #2d2d2d;
+        background-color: #f4f6f8;
+      }
+
+      /* ===================== Navigation (Flexbox) ===================== */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2d2d2d;
+        padding: 1rem;
+      }
+
+      .navbar .logo {
+        color: white;
+        font-size: 1.3rem;
+      }
+
+      .navbar nav {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .navbar nav a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .navbar nav a:hover {
+        color: lightblue;
+      }
+
+      /* ===================== Hero Section ===================== */
+      .hero {
+        text-align: center;
+        background-color: #4a6fa5;
+        color: white;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      /* ===================== Main Section (Grid) ===================== */
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      /* ===================== Cards ===================== */
+      .card {
+        background-color: white;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: box-shadow 0.3s;
+      }
+
+      .card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        max-width: 100%;
+        border-radius: 6px;
+        height: 120px;
+        background-color: #dde2e8;
+      }
+
+      .card h2 {
+        font-size: 1.2rem;
+        color: #4a6fa5;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      /* ===================== Footer ===================== */
+      footer {
+        background-color: #2d2d2d;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      footer a {
+        color: lightblue;
+        text-decoration: none;
+        margin: 0 6px;
+      }
+
+      /* ===================== Responsive: Tablet ===================== */
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      /* ===================== Responsive: Mobile ===================== */
+      @media (max-width: 480px) {
+        .navbar {
+          flex-direction: column;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">Abdur Rehman</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Hi, I'm Abdur Rehman</h1>
+      <p>Full-Stack Developer</p>
+    </section>
+
+    <!-- Main content: 3 cards in a grid -->
+    <main>
+      <div class="card" id="about">
+        <img src="" alt="About" />
+        <h2>About Me</h2>
+        <p>I love coding and building websites.</p>
+      </div>
+
+      <div class="card" id="skills">
+        <img src="" alt="Skills" />
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="card" id="projects">
+        <img src="" alt="Projects" />
+        <h2>Projects</h2>
+        <p>Some of the websites I have built.</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <p>&copy; 2025 Abdur Rehman</p>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </footer>
+
+  </body>
+</html>

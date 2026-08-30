@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bio Page</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #f4f6f8;      
+        color: #2d2d2d;                  
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* ===================== Header ===================== */
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #4a6fa5;     
+        color: white;
+        border-radius: 8px 8px 0 0;
+      }
+
+      header p {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+        font-size: 16px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 0;
+      }
+
+      /* ===================== Card-like container ===================== */
+      main {
+        max-width: 700px;
+        margin: 0 auto;                 
+        background-color: white;
+        border: 2px solid #4a6fa5;       
+        border-radius: 0 0 8px 8px;
+        padding: 30px;                 
+      }
+
+      section {
+        margin-bottom: 25px;             
+        padding-bottom: 15px;            
+      }
+
+      /* ===================== Headings ===================== */
+      h1 {
+        text-align: center;              
+        color: #4a6fa5;                  
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        color: #4a6fa5;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+      }
+
+      /* ===================== Paragraphs ===================== */
+      p {
+        line-height: 1.8;              
+        font-size: 16px;
+      }
+
+      section#home p {
+        text-align: center;
+        font-size: 18px;
+        color: #666;
+      }
+
+      /* ===================== Lists ===================== */
+      ul li {
+        color: #2d6a4f;                 
+        line-height: 1.8;
+        list-style-type: square;         
+      }
+
+      ol li {
+        color: #9c4221;                 
+        line-height: 1.8;
+      }
+
+      /* ===================== Footer ===================== */
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 15px;
+        color: #888;
+        font-size: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header bar with site title and navigation menu -->
+    <header>
+      <p> My Bio Page</p>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#goals">Goals</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Abdur Rehman</h1>
+        <p><em>Full-Stack Developer</em></p>
+      </section>
+
+      <hr />
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I love <strong>coding</strong> and <em>designing</em> beautiful
+          websites. This is my first &lt;html&gt; page and I'm excited to learn
+          more!
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Hobbies list -->
+      <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>Reading</li>
+          <li>Coding</li>
+          <li>Gaming</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- Goals list -->
+      <section id="goals">
+        <h2>My Goals</h2>
+        <ol>
+          <li>Learn MERN Stack</li>
+          <li>Build a startup</li>
+          <li>Teach others</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Abdur Rehman</p>
+    </footer>
+  </body>
+</html>
